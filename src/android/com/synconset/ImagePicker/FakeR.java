@@ -45,4 +45,8 @@ public class FakeR {
 	public static int getId(Context context, String group, String key) {
 		return context.getResources().getIdentifier(key, group, context.getPackageName());
 	}
+
+	public String getPackageName(){
+		return this.packageName;
+	}
 }
